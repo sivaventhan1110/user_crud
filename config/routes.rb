@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     member do 
      get :add_education
      post :save_education
+     delete :delete_education
     end
   end
 end

@@ -30,6 +30,13 @@ class UsersController < ApplicationController
     redirect_to  user_path(@user)
   end
 
+  def delete_education
+    @user = User.find(params[:user_id])
+    @user.user_educations.find(params[:id])
+    flash[:success] = "Education details was successfully Deleted."
+    redirect_to  user_path(@user)
+  end
+
   def destroy
     @user = User.find(params[:id])
     @user.destroy
