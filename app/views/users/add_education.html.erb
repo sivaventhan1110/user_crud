@@ -1,0 +1,10 @@
+Add <%= @user.firstname%> Education Details
+
+
+<%= form_tag(save_education_user_path(@user)) do %>
+  <div> <lable> Degree </lable> <%=text_field_tag 'degree'%></div>
+  <div> <lable> University </lable><%=text_field_tag 'university_name'%> </div>
+  <div> <lable> Grade  </lable> <%=text_field_tag 'grade'%> </div>
+  <div> <lable> Percentage </lable> <%=number_field_tag 'percentage'%> </div>
+  <div><%= submit_tag 'Save' %></div>
+<% end %>

@@ -1,0 +1,11 @@
+<h1> Fill User Details </h1>
+<%= form_tag('/users') do %>
+  <div> <lable> Firstname : </lable> <%=text_field_tag 'firstname'%></div>
+  <div> <lable> Lastname : </lable><%=text_field_tag 'lastname'%> </div>
+  <div> <lable> Email :  </lable> <%=text_field_tag 'email_id'%> </div>
+  <div> <lable> Username :  </lable> <%=text_field_tag 'username'%> </div>
+  <div> <lable> Address :  </lable> <%=text_area_tag 'address'%> </div>
+  <div> <lable> PhoneNo :  </lable> <%=number_field_tag 'contact_no'%> </div>
+  <div> <lable> DOB : </lable> <%=text_field_tag  "dob" %> </div>
+  <div><%= submit_tag 'Save' %></div>
+<% end %>
