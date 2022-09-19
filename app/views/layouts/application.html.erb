@@ -10,6 +10,14 @@
   </head>
 
   <body>
-    <%= yield %>
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand">Home</a>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    </form>
+  </nav>
+    <div class="container-fluid">
+      <%= yield %>
+    </div>
   </body>
 </html>

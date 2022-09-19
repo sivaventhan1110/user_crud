@@ -6,11 +6,12 @@ class UsersController < ApplicationController
   end 
 
   def new 
+    
     @user = User.new
   end
 
   def create
-    @user= User.create(:firstname=> params[:firstname], :lastname=> params[:lastname], :email_id=> params[:email_id], :username=> params[:username], :address=> params[:address], :contact_no=> params[:contact_no], :dob=> params[:dob] )
+    @user= User.create!(:firstname=> params[:user][:firstname], :lastname=> params[:user][:lastname], :email_id=> params[:user][:email_id], :username=> params[:username], :address=> params[:address], :contact_no=> params[:contact_no], :dob=> params[:dob],:image=> params[:user][:image] )
     flash[:success] = "User was successfully Added."
     redirect_to users_path
   end

@@ -1,5 +1,7 @@
 <h1> <%= @user.firstname%> Details </h1>
-
+<% if @user.image.attached? %>
+  <%= image_tag(@user.image) %>
+<% end %>
 <div>First Name : <%=@user.firstname%></div>
 <div>Last Name :  <%=@user.lastname%></div>
 <div>Email Id : <%=@user.email_id%> </div>
@@ -11,7 +13,7 @@
 
 <h3> <%= @user.firstname%> Education Details | <%= link_to "Add Education Deatils", add_education_user_path(@user) %></h3>
 <%if @user.user_educations.any? %>
-  <table>
+  <table class="table table-light">
     <tr>
       <th>Degree </th>
       <th>University</th>
