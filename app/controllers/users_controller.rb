@@ -1,47 +1,45 @@
 class UsersController < ApplicationController
 
+  before_action :find_user, only: [:show, :update, :destroy]
+
   # to list all users
   def index
     @users = User.all
   end 
 
   def new 
-    
     @user = User.new
   end
 
+
   def create
-    @user= User.create!(:firstname=> params[:user][:firstname], :lastname=> params[:user][:lastname], :email_id=> params[:user][:email_id], :username=> params[:username], :address=> params[:address], :contact_no=> params[:contact_no], :dob=> params[:dob],:image=> params[:user][:image] )
+    @user= User.create!(user_params)
     flash[:success] = "User was successfully Added."
-    redirect_to users_path
+    redirect_to user_path(@user.id)
+  end
+
+  def update
+    @user.update(user_params)
+    redirect_to users_path(@user)
   end
 
   def show
-    @user = User.find(params[:id])
   end 
-  
-  def add_education
-    @user = User.find(params[:id])
-  end
-
-  def save_education
-    @user = User.find(params[:id])
-    @user.user_educations.create(:degree=>params[:degree],:university_name=>params[:university_name],:grade=>params[:grade],:percentage=>params[:percentage])
-    flash[:success] = "Education details was successfully Added."
-    redirect_to  user_path(@user)
-  end
-
-  def delete_education
-    @user = User.find(params[:user_id])
-    @user.user_educations.find(params[:id])
-    flash[:success] = "Education details was successfully Deleted."
-    redirect_to  user_path(@user)
-  end
 
   def destroy
-    @user = User.find(params[:id])
-    @user.destroy
+    @user.delete
     redirect_to users_path
   end
 
-end
+  private
+
+  def user_params
+    params.require(:user).permit(:firstname,:lastname,:email_id,:username,:address,:contact_no,:dob,:image)
+  end
+
+  def find_user
+    @user = User.find(params[:id])
+  rescue ActiveRecord::RecordNotFound => e
+    render json: 'User not exisit', status: :not_found
+  end
+end 
