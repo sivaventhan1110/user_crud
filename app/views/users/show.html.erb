@@ -27,6 +27,8 @@
       <td><%=education.university_name%></td>
       <td><%=education.grade%> </td>
       <td><%=education.percentage%> </td>
+      <td> <%= link_to "Edit", edit_user_user_education_path(@user,education)%> </td>
+      <td><%= button_to 'Delete', user_user_education_path(@user,education), method: :delete, data: {confirm: "Are you sure?"} %></td>  
     <% end %>
   </table>
 <% else %>

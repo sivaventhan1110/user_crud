@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
-  before_action :find_user, only: [:show, :update, :destroy]
+  before_action :find_user, only: [:show, :update, :destroy, :edit]
 
   # to list all users
   def index
@@ -11,11 +11,13 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-
   def create
     @user= User.create!(user_params)
     flash[:success] = "User was successfully Added."
     redirect_to user_path(@user.id)
+  end
+
+  def edit
   end
 
   def update
@@ -27,7 +29,7 @@ class UsersController < ApplicationController
   end 
 
   def destroy
-    @user.delete
+    @user.destroy
     redirect_to users_path
   end
 
@@ -40,6 +42,6 @@ class UsersController < ApplicationController
   def find_user
     @user = User.find(params[:id])
   rescue ActiveRecord::RecordNotFound => e
-    render json: 'User not exisit', status: :not_found
+    render json: 'User not exist', status: :not_found
   end
 end 
