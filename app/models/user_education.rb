@@ -1,3 +1,5 @@
 class UserEducation < ApplicationRecord
-  belongs_to :user
+  validates_presence_of :degree
+  validates_presence_of :grade
+  validates_presence_of :university_name
 end

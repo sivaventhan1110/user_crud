@@ -11,7 +11,7 @@
 <div>DOB : <%=@user.dob%></div>
    
 
-<h3> <%= @user.firstname%> Education Details | <%= link_to "Add Education Deatils", new_user_education_path(@user) %></h3>
+<h3> <%= @user.firstname%> Education Details | <%= link_to "Add Education Details", new_user_education_path(@user) %></h3>
 <%if @user.user_educations.any? %>
   <table class="table table-light">
     <tr>
