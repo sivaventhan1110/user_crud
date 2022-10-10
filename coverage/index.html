@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-09-29T15:53:32+05:30">2022-09-29T15:53:32+05:30</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-10-10T08:20:21+05:30">2022-10-10T08:20:21+05:30</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  90.91%
+  92.11%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
-       <span class="red">
-         0.97
+       <span class="green">
+         1.13
        </span>
     </span> hits/line
     )
@@ -39,15 +39,15 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>30</b> files in total.
+    <b>32</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>176</b> relevant lines,
-    <span class="green"><b>160</b> lines covered</span> and
-    <span class="red"><b>16</b> lines missed. </span>
+    <b>190</b> relevant lines,
+    <span class="green"><b>175</b> lines covered</span> and
+    <span class="red"><b>15</b> lines missed. </span>
     (<span class="green">
-  90.91%
+  92.11%
 </span>
 )
   </div>
@@ -183,9 +183,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#7a52db690d86d31bbc955b70c321deb5f2fd61f0" class="src_link" title="app/models/user.rb">app/models/user.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">8</td>
-            <td class="cell--number">5</td>
-            <td class="cell--number">5</td>
+            <td class="cell--number">12</td>
+            <td class="cell--number">9</td>
+            <td class="cell--number">9</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -380,23 +380,45 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#726f89684c1d17a51ccfe0ec8a05aa7313cba1a7" class="src_link" title="spec/controllers/users_controller_sepc.rb">spec/controllers/users_controller_sepc.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">97.37 %</td>
-            <td class="cell--number">67</td>
-            <td class="cell--number">38</td>
-            <td class="cell--number">37</td>
-            <td class="cell--number">1</td>
-            <td class="cell--number">1.00</td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">64</td>
+            <td class="cell--number">35</td>
+            <td class="cell--number">35</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.14</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#51876b209403a044886e1e5598f6bcb046e62123" class="src_link" title="spec/factories/users.rb">spec/factories/users.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">8</td>
+            <td class="cell--number">8</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">4.00</td>
             
           </tr>
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#9edfd7994082cd0d5cbc9120a7646b95200c52f9" class="src_link" title="spec/rails_helper.rb">spec/rails_helper.rb</a></td>
-            <td class="yellow strong cell--number t-file__coverage">84.62 %</td>
-            <td class="cell--number">64</td>
-            <td class="cell--number">13</td>
-            <td class="cell--number">11</td>
+            <td class="yellow strong cell--number t-file__coverage">87.50 %</td>
+            <td class="cell--number">68</td>
+            <td class="cell--number">16</td>
+            <td class="cell--number">14</td>
             <td class="cell--number">2</td>
-            <td class="cell--number">0.85</td>
+            <td class="cell--number">0.94</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#319680659b087e5d43e0985d6a3de216e50720bd" class="src_link" title="spec/support/factory_bot.rb">spec/support/factory_bot.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">3</td>
+            <td class="cell--number">2</td>
+            <td class="cell--number">2</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.00</td>
             
           </tr>
         
@@ -1595,7 +1617,7 @@
 
             
 
-            <code class="ruby">    if @user= User.create(user_params)</code>
+            <code class="ruby">    if @user = User.create(user_params)</code>
           </li>
         </div>
       
@@ -1617,7 +1639,7 @@
 
             
 
-            <code class="ruby">      redirect_to user_path(@user.id)</code>
+            <code class="ruby">      redirect_to users_path(@user.id)</code>
           </li>
         </div>
       
@@ -2270,8 +2292,8 @@
     
 
     <div class="t-line-summary">
-      <b>5</b> relevant lines.
-      <span class="green"><b>5</b> lines covered</span> and
+      <b>9</b> relevant lines.
+      <span class="green"><b>9</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -2316,13 +2338,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="4">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">  validates_presence_of :firstname</code>
           </li>
         </div>
       
@@ -2333,18 +2355,18 @@
 
             
 
-            <code class="ruby">  has_many :user_educations, dependent: :destroy</code>
+            <code class="ruby">  validates_presence_of :address</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="6">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">  #to upload image</code>
+            
+
+            <code class="ruby">  validates_presence_of :contact_no</code>
           </li>
         </div>
       
@@ -2355,12 +2377,56 @@
 
             
 
-            <code class="ruby">  has_one_attached :image</code>
+            <code class="ruby">  validates_presence_of :dob</code>
           </li>
         </div>
       
         <div>
           <li class="never" data-hits="" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="9">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  has_many :user_educations, dependent: :destroy</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby">  #to upload image</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="11">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  has_one_attached :image</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
             
             
 
@@ -12191,7 +12257,7 @@
     <h3>spec/controllers/users_controller_sepc.rb</h3>
     <h4>
       <span class="green">
-  97.37%
+  100.0%
 </span>
 
       lines covered
@@ -12200,9 +12266,9 @@
     
 
     <div class="t-line-summary">
-      <b>38</b> relevant lines.
-      <span class="green"><b>37</b> lines covered</span> and
-      <span class="red"><b>1</b> lines missed.</span>
+      <b>35</b> relevant lines.
+      <span class="green"><b>35</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
 
     
@@ -12257,7 +12323,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="5">
+          <li class="covered" data-hits="5" data-linenumber="5">
+            <span class="hits">5</span>
+            
+
+            
+
+            <code class="ruby">  let(:user) { create :user}</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
             <span class="hits">1</span>
             
 
@@ -12268,7 +12345,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="6">
+          <li class="never" data-hits="" data-linenumber="7">
             
             
 
@@ -12279,7 +12356,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="7">
+          <li class="covered" data-hits="2" data-linenumber="8">
             <span class="hits">2</span>
             
 
@@ -12290,7 +12367,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="8">
+          <li class="never" data-hits="" data-linenumber="9">
             
             
 
@@ -12301,24 +12378,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="9">
+          <li class="never" data-hits="" data-linenumber="10">
             
             
 
             
 
             <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="10">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  describe &quot;User#Create&quot; do</code>
           </li>
         </div>
       
@@ -12329,7 +12395,7 @@
 
             
 
-            <code class="ruby">    it &#39;successfully creates a new user&#39; do</code>
+            <code class="ruby">  describe &quot;User#Create&quot; do</code>
           </li>
         </div>
       
@@ -12340,7 +12406,7 @@
 
             
 
-            <code class="ruby">      @user = post :create, :params =&gt; { :user =&gt; valid_attributes}</code>
+            <code class="ruby">    it &#39;successfully creates a new user&#39; do</code>
           </li>
         </div>
       
@@ -12351,18 +12417,18 @@
 
             
 
-            <code class="ruby">      expect(response.status).to eq(302)</code>
+            <code class="ruby">      @user = post :create, :params =&gt; { :user =&gt; valid_attributes}</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="14">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="14">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    end</code>
+            
+
+            <code class="ruby">      expect(response.status).to eq(302)</code>
           </li>
         </div>
       
@@ -12373,18 +12439,18 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="16">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="16">
+            
             
 
             
 
-            <code class="ruby">    it &#39;unsuccessfully creates a new user&#39; do</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -12395,29 +12461,29 @@
 
             
 
-            <code class="ruby">      post :create, :params =&gt; { :user =&gt; { :firstname =&gt; &quot;Any Name&quot;,:lastname =&gt; &quot;Any Name&quot; } }</code>
+            <code class="ruby">    it &#39;unsuccessfully creates a new user&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="18">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="18">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">      expect(assigns(:user).errors.empty?).should_not be_true</code>
+            
+
+            <code class="ruby">      post :create, :params =&gt; { :user =&gt; { :firstname =&gt; &quot;&quot;,:lastname =&gt; &quot;Any Name&quot; } }</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="19">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="19">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">      expect(user.errors.empty?).should be false</code>
           </li>
         </div>
       
@@ -12428,7 +12494,7 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -12439,7 +12505,7 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -12450,18 +12516,18 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="23">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="23">
+            
             
 
             
 
-            <code class="ruby">  describe &quot;User#update&quot; do</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -12472,7 +12538,7 @@
 
             
 
-            <code class="ruby">    it &#39;successfully creates a new user&#39; do</code>
+            <code class="ruby">  describe &quot;User#update&quot; do</code>
           </li>
         </div>
       
@@ -12483,7 +12549,7 @@
 
             
 
-            <code class="ruby">      user = User.create!( :firstname =&gt; &quot;test Name&quot;,:lastname =&gt; &quot;Any Name&quot;, :email_id =&gt; &quot;Any@gmail.com&quot;, :contact_no =&gt; &quot;938498&quot;, :dob=&gt;&quot;7/10/22&quot; )</code>
+            <code class="ruby">    it &#39;successfully creates a new user&#39; do</code>
           </li>
         </div>
       
@@ -12571,7 +12637,7 @@
 
             
 
-            <code class="ruby">      user = User.create!( :firstname =&gt; &quot;test Name&quot;,:lastname =&gt; &quot;Any Name&quot;, :email_id =&gt; &quot;Any@gmail.com&quot;, :contact_no =&gt; &quot;938498&quot;, :dob=&gt;&quot;7/10/22&quot; )</code>
+            <code class="ruby">      delete :destroy, :params =&gt; { :id=&gt;user.id}</code>
           </li>
         </div>
       
@@ -12582,18 +12648,18 @@
 
             
 
-            <code class="ruby">      delete :destroy, :params =&gt; { :id=&gt;user.id}</code>
+            <code class="ruby">      expect(response.status).to eq(302)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="35">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="35">
+            
             
 
             
 
-            <code class="ruby">      expect(response.status).to eq(302)</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -12604,7 +12670,7 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -12615,23 +12681,12 @@
 
             
 
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="38">
-            
-            
-
-            
-
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="39">
+          <li class="covered" data-hits="1" data-linenumber="38">
             <span class="hits">1</span>
             
 
@@ -12642,7 +12697,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="40">
+          <li class="covered" data-hits="1" data-linenumber="39">
             <span class="hits">1</span>
             
 
@@ -12653,7 +12708,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="41">
+          <li class="covered" data-hits="1" data-linenumber="40">
             <span class="hits">1</span>
             
 
@@ -12664,13 +12719,24 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="42">
+          <li class="covered" data-hits="1" data-linenumber="41">
             <span class="hits">1</span>
             
 
             
 
             <code class="ruby">      expect(response.status).to eq(200)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="42">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -12681,7 +12747,7 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -12692,23 +12758,12 @@
 
             
 
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="45">
-            
-            
-
-            
-
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="46">
+          <li class="covered" data-hits="1" data-linenumber="45">
             <span class="hits">1</span>
             
 
@@ -12719,7 +12774,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="47">
+          <li class="covered" data-hits="1" data-linenumber="46">
             <span class="hits">1</span>
             
 
@@ -12730,18 +12785,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="48">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      user = User.create!( :firstname =&gt; &quot;test Name&quot;,:lastname =&gt; &quot;Any Name&quot;, :email_id =&gt; &quot;Any@gmail.com&quot;, :contact_no =&gt; &quot;938498&quot;, :dob=&gt;&quot;7/10/22&quot; )</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="49">
+          <li class="covered" data-hits="1" data-linenumber="47">
             <span class="hits">1</span>
             
 
@@ -12752,7 +12796,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="50">
+          <li class="covered" data-hits="1" data-linenumber="48">
             <span class="hits">1</span>
             
 
@@ -12763,7 +12807,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="51">
+          <li class="never" data-hits="" data-linenumber="49">
             
             
 
@@ -12774,7 +12818,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="52">
+          <li class="never" data-hits="" data-linenumber="50">
             
             
 
@@ -12785,7 +12829,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="53">
+          <li class="covered" data-hits="1" data-linenumber="51">
             <span class="hits">1</span>
             
 
@@ -12796,18 +12840,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="54">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      user = User.create!( :firstname =&gt; &quot;test Name&quot;,:lastname =&gt; &quot;Any Name&quot;, :email_id =&gt; &quot;Any@gmail.com&quot;, :contact_no =&gt; &quot;938498&quot;, :dob=&gt;&quot;7/10/22&quot; )</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="55">
+          <li class="covered" data-hits="1" data-linenumber="52">
             <span class="hits">1</span>
             
 
@@ -12818,7 +12851,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="56">
+          <li class="covered" data-hits="1" data-linenumber="53">
             <span class="hits">1</span>
             
 
@@ -12829,7 +12862,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="57">
+          <li class="never" data-hits="" data-linenumber="54">
             
             
 
@@ -12840,7 +12873,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="58">
+          <li class="never" data-hits="" data-linenumber="55">
             
             
 
@@ -12851,7 +12884,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="59">
+          <li class="never" data-hits="" data-linenumber="56">
             
             
 
@@ -12862,7 +12895,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="60">
+          <li class="covered" data-hits="1" data-linenumber="57">
             <span class="hits">1</span>
             
 
@@ -12873,7 +12906,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="61">
+          <li class="covered" data-hits="1" data-linenumber="58">
             <span class="hits">1</span>
             
 
@@ -12884,7 +12917,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="62">
+          <li class="covered" data-hits="1" data-linenumber="59">
             <span class="hits">1</span>
             
 
@@ -12895,7 +12928,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="63">
+          <li class="covered" data-hits="1" data-linenumber="60">
             <span class="hits">1</span>
             
 
@@ -12906,7 +12939,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="64">
+          <li class="never" data-hits="" data-linenumber="61">
             
             
 
@@ -12917,7 +12950,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="65">
+          <li class="never" data-hits="" data-linenumber="62">
             
             
 
@@ -12928,7 +12961,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="66">
+          <li class="never" data-hits="" data-linenumber="63">
             
             
 
@@ -12939,7 +12972,148 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="67">
+          <li class="never" data-hits="" data-linenumber="64">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="51876b209403a044886e1e5598f6bcb046e62123">
+  <div class="header">
+    <h3>spec/factories/users.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>8</b> relevant lines.
+      <span class="green"><b>8</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">FactoryBot.define do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  factory :user do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="5" data-linenumber="3">
+            <span class="hits">5</span>
+            
+
+            
+
+            <code class="ruby">    firstname {&#39;Test user&#39;}</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="5" data-linenumber="4">
+            <span class="hits">5</span>
+            
+
+            
+
+            <code class="ruby">    lastname {&#39;Test user&#39;}</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="5" data-linenumber="5">
+            <span class="hits">5</span>
+            
+
+            
+
+            <code class="ruby">    email_id {&#39;test@gmail.com&#39;}</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="5" data-linenumber="6">
+            <span class="hits">5</span>
+            
+
+            
+
+            <code class="ruby">    dob {&#39;12-09-1999&#39;}</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="5" data-linenumber="7">
+            <span class="hits">5</span>
+            
+
+            
+
+            <code class="ruby">    contact_no {&#39;09290000&#39;}</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="5" data-linenumber="8">
+            <span class="hits">5</span>
+            
+
+            
+
+            <code class="ruby">    address {&#39;xyz&#39;}</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
             
             
 
@@ -12959,7 +13133,7 @@
     <h3>spec/rails_helper.rb</h3>
     <h4>
       <span class="yellow">
-  84.62%
+  87.5%
 </span>
 
       lines covered
@@ -12968,8 +13142,8 @@
     
 
     <div class="t-line-summary">
-      <b>13</b> relevant lines.
-      <span class="green"><b>11</b> lines covered</span> and
+      <b>16</b> relevant lines.
+      <span class="green"><b>14</b> lines covered</span> and
       <span class="red"><b>2</b> lines missed.</span>
     </div>
 
@@ -13058,24 +13232,24 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="8">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="8">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"># Add additional requires below this line. Rails is not loaded until this point!</code>
+            
+
+            <code class="ruby">require &#39;simplecov&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="9">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="9">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">SimpleCov.start</code>
           </li>
         </div>
       
@@ -13086,7 +13260,7 @@
 
             
 
-            <code class="ruby"># Requires supporting ruby files with custom matchers and macros, etc, in</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -13097,7 +13271,7 @@
 
             
 
-            <code class="ruby"># spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are</code>
+            <code class="ruby"># Previous content of test helper now starts here</code>
           </li>
         </div>
       
@@ -13108,7 +13282,7 @@
 
             
 
-            <code class="ruby"># run as spec files by default. This means that files in spec/support that end</code>
+            <code class="ruby"># Add additional requires below this line. Rails is not loaded until this point!</code>
           </li>
         </div>
       
@@ -13119,7 +13293,7 @@
 
             
 
-            <code class="ruby"># in _spec.rb will both be required and run as specs, causing the specs to be</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -13130,7 +13304,7 @@
 
             
 
-            <code class="ruby"># run twice. It is recommended that you do not name files matching this glob to</code>
+            <code class="ruby"># Requires supporting ruby files with custom matchers and macros, etc, in</code>
           </li>
         </div>
       
@@ -13141,7 +13315,7 @@
 
             
 
-            <code class="ruby"># end with _spec.rb. You can configure this pattern with the --pattern</code>
+            <code class="ruby"># spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are</code>
           </li>
         </div>
       
@@ -13152,7 +13326,7 @@
 
             
 
-            <code class="ruby"># option on the command line or in ~/.rspec, .rspec or `.rspec-local`.</code>
+            <code class="ruby"># run as spec files by default. This means that files in spec/support that end</code>
           </li>
         </div>
       
@@ -13163,7 +13337,7 @@
 
             
 
-            <code class="ruby">#</code>
+            <code class="ruby"># in _spec.rb will both be required and run as specs, causing the specs to be</code>
           </li>
         </div>
       
@@ -13174,7 +13348,7 @@
 
             
 
-            <code class="ruby"># The following line is provided for convenience purposes. It has the downside</code>
+            <code class="ruby"># run twice. It is recommended that you do not name files matching this glob to</code>
           </li>
         </div>
       
@@ -13185,7 +13359,7 @@
 
             
 
-            <code class="ruby"># of increasing the boot-up time by auto-requiring all files in the support</code>
+            <code class="ruby"># end with _spec.rb. You can configure this pattern with the --pattern</code>
           </li>
         </div>
       
@@ -13196,7 +13370,7 @@
 
             
 
-            <code class="ruby"># directory. Alternatively, in the individual `*_spec.rb` files, manually</code>
+            <code class="ruby"># option on the command line or in ~/.rspec, .rspec or `.rspec-local`.</code>
           </li>
         </div>
       
@@ -13207,7 +13381,7 @@
 
             
 
-            <code class="ruby"># require only the support files necessary.</code>
+            <code class="ruby">#</code>
           </li>
         </div>
       
@@ -13218,7 +13392,7 @@
 
             
 
-            <code class="ruby">#</code>
+            <code class="ruby"># The following line is provided for convenience purposes. It has the downside</code>
           </li>
         </div>
       
@@ -13229,7 +13403,7 @@
 
             
 
-            <code class="ruby"># Dir[Rails.root.join(&#39;spec&#39;, &#39;support&#39;, &#39;**&#39;, &#39;*.rb&#39;)].sort.each { |f| require f }</code>
+            <code class="ruby"># of increasing the boot-up time by auto-requiring all files in the support</code>
           </li>
         </div>
       
@@ -13240,7 +13414,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby"># directory. Alternatively, in the individual `*_spec.rb` files, manually</code>
           </li>
         </div>
       
@@ -13251,7 +13425,7 @@
 
             
 
-            <code class="ruby"># Checks for pending migrations and applies them before tests are run.</code>
+            <code class="ruby"># require only the support files necessary.</code>
           </li>
         </div>
       
@@ -13262,29 +13436,29 @@
 
             
 
-            <code class="ruby"># If you are not using ActiveRecord, you can remove these lines.</code>
+            <code class="ruby">#</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="27">
-            
-            
-
+          <li class="covered" data-hits="2" data-linenumber="27">
+            <span class="hits">2</span>
             
 
-            <code class="ruby">begin</code>
+            
+
+            <code class="ruby">Dir[Rails.root.join(&#39;spec&#39;, &#39;support&#39;, &#39;**&#39;, &#39;*.rb&#39;)].sort.each { |f| require f }</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="28">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="28">
+            
             
 
             
 
-            <code class="ruby">  ActiveRecord::Migration.maintain_test_schema!</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -13295,12 +13469,56 @@
 
             
 
+            <code class="ruby"># Checks for pending migrations and applies them before tests are run.</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="30">
+            
+            
+
+            
+
+            <code class="ruby"># If you are not using ActiveRecord, you can remove these lines.</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="31">
+            
+            
+
+            
+
+            <code class="ruby">begin</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="32">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  ActiveRecord::Migration.maintain_test_schema!</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="33">
+            
+            
+
+            
+
             <code class="ruby">rescue ActiveRecord::PendingMigrationError =&gt; e</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="30">
+          <li class="missed" data-hits="0" data-linenumber="34">
             
             
 
@@ -13311,7 +13529,7 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="31">
+          <li class="missed" data-hits="0" data-linenumber="35">
             
             
 
@@ -13322,7 +13540,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="32">
+          <li class="never" data-hits="" data-linenumber="36">
             
             
 
@@ -13333,7 +13551,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="33">
+          <li class="covered" data-hits="1" data-linenumber="37">
             <span class="hits">1</span>
             
 
@@ -13344,7 +13562,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="34">
+          <li class="never" data-hits="" data-linenumber="38">
             
             
 
@@ -13355,7 +13573,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="35">
+          <li class="covered" data-hits="1" data-linenumber="39">
             <span class="hits">1</span>
             
 
@@ -13366,57 +13584,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="36">
+          <li class="never" data-hits="" data-linenumber="40">
             
             
 
             
 
             <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="37">
-            
-            
-
-            
-
-            <code class="ruby">  # If you&#39;re not using ActiveRecord, or you&#39;d prefer not to run each of your</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="38">
-            
-            
-
-            
-
-            <code class="ruby">  # examples within a transaction, remove the following line or assign false</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="39">
-            
-            
-
-            
-
-            <code class="ruby">  # instead of true.</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="40">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  config.use_transactional_fixtures = true</code>
           </li>
         </div>
       
@@ -13427,7 +13601,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  # If you&#39;re not using ActiveRecord, or you&#39;d prefer not to run each of your</code>
           </li>
         </div>
       
@@ -13438,7 +13612,7 @@
 
             
 
-            <code class="ruby">  # You can uncomment this line to turn off ActiveRecord support entirely.</code>
+            <code class="ruby">  # examples within a transaction, remove the following line or assign false</code>
           </li>
         </div>
       
@@ -13449,18 +13623,18 @@
 
             
 
-            <code class="ruby">  # config.use_active_record = false</code>
+            <code class="ruby">  # instead of true.</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="44">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="44">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">  config.use_transactional_fixtures = true</code>
           </li>
         </div>
       
@@ -13471,7 +13645,7 @@
 
             
 
-            <code class="ruby">  # RSpec Rails can automatically mix in different behaviours to your tests</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -13482,7 +13656,7 @@
 
             
 
-            <code class="ruby">  # based on their file location, for example enabling you to call `get` and</code>
+            <code class="ruby">  # You can uncomment this line to turn off ActiveRecord support entirely.</code>
           </li>
         </div>
       
@@ -13493,7 +13667,7 @@
 
             
 
-            <code class="ruby">  # `post` in specs under `spec/controllers`.</code>
+            <code class="ruby">  # config.use_active_record = false</code>
           </li>
         </div>
       
@@ -13504,7 +13678,7 @@
 
             
 
-            <code class="ruby">  #</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -13515,7 +13689,7 @@
 
             
 
-            <code class="ruby">  # You can disable this behaviour by removing the line below, and instead</code>
+            <code class="ruby">  # RSpec Rails can automatically mix in different behaviours to your tests</code>
           </li>
         </div>
       
@@ -13526,7 +13700,7 @@
 
             
 
-            <code class="ruby">  # explicitly tag your specs with their type, e.g.:</code>
+            <code class="ruby">  # based on their file location, for example enabling you to call `get` and</code>
           </li>
         </div>
       
@@ -13537,7 +13711,7 @@
 
             
 
-            <code class="ruby">  #</code>
+            <code class="ruby">  # `post` in specs under `spec/controllers`.</code>
           </li>
         </div>
       
@@ -13548,7 +13722,7 @@
 
             
 
-            <code class="ruby">  #     RSpec.describe UsersController, type: :controller do</code>
+            <code class="ruby">  #</code>
           </li>
         </div>
       
@@ -13559,7 +13733,7 @@
 
             
 
-            <code class="ruby">  #       # ...</code>
+            <code class="ruby">  # You can disable this behaviour by removing the line below, and instead</code>
           </li>
         </div>
       
@@ -13570,7 +13744,7 @@
 
             
 
-            <code class="ruby">  #     end</code>
+            <code class="ruby">  # explicitly tag your specs with their type, e.g.:</code>
           </li>
         </div>
       
@@ -13592,7 +13766,7 @@
 
             
 
-            <code class="ruby">  # The different available types are documented in the features, such as in</code>
+            <code class="ruby">  #     RSpec.describe UsersController, type: :controller do</code>
           </li>
         </div>
       
@@ -13603,18 +13777,18 @@
 
             
 
-            <code class="ruby">  # https://relishapp.com/rspec/rspec-rails/docs</code>
+            <code class="ruby">  #       # ...</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="58">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="58">
+            
             
 
             
 
-            <code class="ruby">  config.infer_spec_type_from_file_location!</code>
+            <code class="ruby">  #     end</code>
           </li>
         </div>
       
@@ -13625,7 +13799,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  #</code>
           </li>
         </div>
       
@@ -13636,29 +13810,29 @@
 
             
 
-            <code class="ruby">  # Filter lines from Rails gems in backtraces.</code>
+            <code class="ruby">  # The different available types are documented in the features, such as in</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="61">
+          <li class="never" data-hits="" data-linenumber="61">
+            
+            
+
+            
+
+            <code class="ruby">  # https://relishapp.com/rspec/rspec-rails/docs</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="62">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  config.filter_rails_from_backtrace!</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="62">
-            
-            
-
-            
-
-            <code class="ruby">  # arbitrary gems may also be filtered via:</code>
+            <code class="ruby">  config.infer_spec_type_from_file_location!</code>
           </li>
         </div>
       
@@ -13669,12 +13843,120 @@
 
             
 
-            <code class="ruby">  # config.filter_gems_from_backtrace(&quot;gem name&quot;)</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
           <li class="never" data-hits="" data-linenumber="64">
+            
+            
+
+            
+
+            <code class="ruby">  # Filter lines from Rails gems in backtraces.</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="65">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  config.filter_rails_from_backtrace!</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="66">
+            
+            
+
+            
+
+            <code class="ruby">  # arbitrary gems may also be filtered via:</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="67">
+            
+            
+
+            
+
+            <code class="ruby">  # config.filter_gems_from_backtrace(&quot;gem name&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="68">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="319680659b087e5d43e0985d6a3de216e50720bd">
+  <div class="header">
+    <h3>spec/support/factory_bot.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>2</b> relevant lines.
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">RSpec.configure do |config|</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  config.include FactoryBot::Syntax::Methods</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="3">
             
             
 

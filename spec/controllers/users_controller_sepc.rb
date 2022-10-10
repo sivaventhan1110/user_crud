@@ -2,6 +2,7 @@
 require "rails_helper"
 
 RSpec.describe UsersController, :type => :controller do
+  let(:user) { create :user}
   let(:valid_attributes) do
     {
       :firstname => "Any Name",:lastname => "Any Name", :email_id => "Any@gmail.com", :contact_no => "938498", :dob=>"7/10/22" 
@@ -14,15 +15,14 @@ RSpec.describe UsersController, :type => :controller do
     end
 
     it 'unsuccessfully creates a new user' do
-      post :create, :params => { :user => { :firstname => "Any Name",:lastname => "Any Name" } }
-      expect(assigns(:user).errors.empty?).should_not be_true
+      post :create, :params => { :user => { :firstname => "",:lastname => "Any Name" } }
+      expect(user.errors.empty?).should be false
 
     end
   end
 
   describe "User#update" do
     it 'successfully creates a new user' do
-      user = User.create!( :firstname => "test Name",:lastname => "Any Name", :email_id => "Any@gmail.com", :contact_no => "938498", :dob=>"7/10/22" )
       patch :update, :params => { :user => valid_attributes, :id=>user.id}
       expect(response.status).to eq(302)
     end
@@ -30,7 +30,6 @@ RSpec.describe UsersController, :type => :controller do
 
   describe "User#delete" do
     it 'successfully creates a new user' do
-      user = User.create!( :firstname => "test Name",:lastname => "Any Name", :email_id => "Any@gmail.com", :contact_no => "938498", :dob=>"7/10/22" )
       delete :destroy, :params => { :id=>user.id}
       expect(response.status).to eq(302)
     end
@@ -45,13 +44,11 @@ RSpec.describe UsersController, :type => :controller do
 
   describe "User#show" do
     it 'successfully show user' do
-      user = User.create!( :firstname => "test Name",:lastname => "Any Name", :email_id => "Any@gmail.com", :contact_no => "938498", :dob=>"7/10/22" )
       get :show, :params => { :id=>user.id}
       expect(response.status).to eq(200)
     end
 
     it 'invalid show user' do
-      user = User.create!( :firstname => "test Name",:lastname => "Any Name", :email_id => "Any@gmail.com", :contact_no => "938498", :dob=>"7/10/22" )
       get :show, :params => { :id=>0}
       expect(response.status).to eq(404)
     end

@@ -12,9 +12,9 @@ class UsersController < ApplicationController
   end
 
   def create
-    if @user= User.create(user_params)
+    if @user = User.create(user_params)
       flash[:success] = "User was successfully Added."
-      redirect_to user_path(@user.id)
+      redirect_to users_path(@user.id)
     else 
       redirect_to users_path
     end
