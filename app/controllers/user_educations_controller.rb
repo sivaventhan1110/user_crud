@@ -7,6 +7,7 @@ class UserEducationsController < ApplicationController
   def create
     @user = User.find(params[:user_id])
     @user_education =  @user.user_educations.create!(education_params)
+    UserEducationMailer.with(user: @user).new_education_email.deliver_later
     flash[:success] = "Education details was successfully Added."
     redirect_to  user_path(@user)
   end
