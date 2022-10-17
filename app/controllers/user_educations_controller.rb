@@ -9,6 +9,10 @@ class UserEducationsController < ApplicationController
     @user_education =  @user.user_educations.create!(education_params)
     UserEducationMailer.with(user: @user).new_education_email.deliver_later
     flash[:success] = "Education details was successfully Added."
+   
+    notification = UserEducationNotification.with(user_education: @user_education)
+    notification.deliver_later(User.all)
+
     redirect_to  user_path(@user)
   end
 

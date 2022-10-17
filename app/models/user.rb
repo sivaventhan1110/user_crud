@@ -9,4 +9,6 @@ class User < ApplicationRecord
   has_many :user_educations, dependent: :destroy
   #to upload image
   has_one_attached :image
+  has_many :notifications, as: :recipient, dependent: :destroy
+  
 end

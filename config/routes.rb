@@ -12,3 +12,4 @@ Rails.application.routes.draw do
     end
   end
 end
+Rails.application.routes.default_url_options[:host] = 'localhost:3000'
