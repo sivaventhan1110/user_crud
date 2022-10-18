@@ -25,6 +25,10 @@ class UserEducationsController < ApplicationController
     @user = User.find(params[:user_id])
     @user.user_educations.update(education_params)
     flash[:success] = "Education details was successfully updated"
+
+    notification = UserEducationNotification.with(user_education: @user_education)
+    notification.deliver_later(User.all)
+
     redirect_to  user_path(@user)
   end
 
@@ -39,6 +43,10 @@ class UserEducationsController < ApplicationController
     education = @user.user_educations.find(params[:id])
     education.delete
     flash[:success] = "Education details was successfully Deleted."
+
+    notification = UserEducationNotification.with(user_education: @user_education)
+    notification.deliver_later(User.all)
+    
     redirect_to  user_path(@user)
   end
 
